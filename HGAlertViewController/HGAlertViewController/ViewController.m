@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HGAlertViewController.h"
 
 @interface ViewController ()
 
@@ -19,6 +20,18 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)showAlertBtnClick:(UIButton *)sender {
+    HGAlertViewController * alert = [HGAlertViewController alertControllerWithTitle:@"展示" message:@"链式编程实现" preferredStyle:(UIAlertControllerStyleAlert)];
+    alert.addInput(@"输入账号",^(UITextField *textField){
+        
+    }).addInput(@"输入密码",^(UITextField *textField){
+        
+    }).addAction(@"取消",^(UIAlertAction *alertAction){
+        
+    }).addAction(@"确定",^(UIAlertAction *alertAction){
+        
+    });
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
