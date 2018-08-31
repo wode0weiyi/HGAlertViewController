@@ -1,0 +1,7 @@
+HGAlertViewController.xcodeproj/xcuserdata/
+HGAlertViewController.xcworkspace/
+Pods/
+*.swp
+Podfile.lock
+.DS_Store
+HGAlertViewController.xcodeproj/project.xcworkspace/xcuserdata/
